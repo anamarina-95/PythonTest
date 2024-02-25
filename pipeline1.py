@@ -9,11 +9,11 @@ pipeline{
             steps {
                 sh '''
                     cd $the_path
-                    if [ ! -d PythonTest ]:
-                    then:
+                    if [[ ! -d PythonTest ]]
+                    then
                        git clone git@github.com:anamarina-95/PythonTest.git
                        cd PythonTest
-                    else:
+                    else
                        cd PythonTest
                        git checkout main
                        git pull origin main
