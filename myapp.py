@@ -1,3 +1,3 @@
 def hello():
-    print("hello hello")
+    print("hello 000o")
     
